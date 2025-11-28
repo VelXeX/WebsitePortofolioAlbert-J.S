@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #000000, #1a0033);
+            color: #ffffff;
+            overflow-x: hidden;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px #8a2be2;
+        }
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            text-shadow: 0 0 10px #8a2be2;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #ff00ff;
+            text-shadow: 0 0 20px #ff00ff;
+        }
+        .content {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-grow: 1;
+        }
+        .content h2 {
+            font-size: 3em;
+            text-shadow: 0 0 30px #00ffff;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .top-sections {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        .maps-section, .detail-section {
+            flex: 1;
+            min-width: 300px;
+        }
+        .maps-section h3, .detail-section h3 {
+            color: #ff00ff;
+            text-shadow: 0 0 15px #ff00ff;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .maps-container {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 0 30px #8a2be2;
+        }
+        .maps-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+        .detail-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .detail-item {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #8a2be2;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .detail-item i {
+            color: #00ffff;
+            font-size: 1.5em;
+            text-shadow: 0 0 10px #00ffff;
+        }
+        .detail-item p {
+            margin: 0;
+            color: #ffffff;
+            text-shadow: 0 0 10px #8a2be2;
+        }
+        .feedback-section {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .feedback-section h3 {
+            color: #ff00ff;
+            text-shadow: 0 0 15px #ff00ff;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .feedback-form {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px #8a2be2;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .feedback-form input, .feedback-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #8a2be2;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            font-size: 1em;
+            box-shadow: 0 0 10px #8a2be2;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .feedback-form input:focus, .feedback-form textarea:focus {
+            border-color: #ff00ff;
+            box-shadow: 0 0 20px #ff00ff;
+            outline: none;
+        }
+        .feedback-form button {
+            background: #ff00ff;
+            color: #ffffff;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1em;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 0 15px #ff00ff;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+        .feedback-form button:hover {
+            background-color: #cc00cc;
+            box-shadow: 0 0 25px #ff66ff;
+        }
+        .social-section {
+            text-align: center;
+        }
+        .social-section h3 {
+            color: #ff00ff;
+            text-shadow: 0 0 15px #ff00ff;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .contact-list {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        .contact-item {
+            text-align: center;
+        }
+        .contact-item a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2em;
+            text-shadow: 0 0 10px #8a2be2;
+            transition: all 0.3s;
+        }
+        .contact-item a:hover {
+            color: #ff00ff;
+            text-shadow: 0 0 20px #ff00ff;
+        }
+        .contact-item i {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px #00ffff;
+            transition: text-shadow 0.3s;
+        }
+        .contact-item a:hover i {
+            text-shadow: 0 0 30px #ff00ff;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #cccccc;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .top-sections {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .maps-container iframe {
+                height: 250px;
+            }
+            .feedback-form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="portofolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <section class="content">
+        <h2>Hubungi Saya</h2>
+        <div class="top-sections">
+            <div class="maps-section">
+                <h3>Lokasi Saya</h3>
+                <div class="maps-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.207815883432!2d107.59447907536745!3d-6.910769698454276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e615a75d442d%3A0x2e42b787224b4e64!2sGg.%204%20No.290%2066%2C%20Arjuna%2C%20Kec.%20Cicendo%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040172!5e0!3m2!1sid!2sid!4v1764334769173!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">"allowfullscreen="" loading="lazy"</iframe>
+                </div>
+            </div>
+            
+            <div class="detail-section">
+                <h3>Detail Kontak</h3>
+                <div class="detail-list">
+                    <div class="detail-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Alamat:&nbsp; Jl. Kesatriaan Gang Saleh 4 No 290/66&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-phone"></i>
+                        <p>Telepon: +62 822-5891-5102&nbsp; &nbsp;</p>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>Email:&nbsp; Joneaalber@gmail.com / velxex08@gmail.com&nbsp; &nbsp; &nbsp; &nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Section Form Feedback -->
+        <div class="feedback-section">
+            <h3>Berikan Feedback</h3>
+            <form class="feedback-form" action="#" method="post">
+                <input type="text" name="name" placeholder="Nama Anda" required>
+                <input type="email" name="email" placeholder="Email Anda" required>
+                <textarea name="message" rows="5" placeholder="Pesan atau Feedback Anda" required></textarea>
+                <button type="submit">Kirim Feedback</button>
+            </form>
+        </div>
+        <div class="social-section">
+            <h3>Media Sosial Saya</h3>
+            <div class="contact-list">
+                <div class="contact-item">
+                    <a href="https://wa.me/+6282258915102" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <br>WhatsApp
+                    </a>
+              </div>
+                <div class="contact-item">
+                    <a href="https://instagram.com/VelXeX" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <br>Instagram
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://tiktok.com/@_velxex_" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                        <br>TikTok
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Albert Jonea Setiawan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
