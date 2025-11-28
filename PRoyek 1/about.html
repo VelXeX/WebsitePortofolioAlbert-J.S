@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - About</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #000000, #1a0033);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px #8a2be2;
+        }
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            text-shadow: 0 0 10px #8a2be2;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #ff00ff;
+            text-shadow: 0 0 20px #ff00ff;
+        }
+        .content {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .content h2 {
+            font-size: 3em;
+            text-align: center;
+            text-shadow: 0 0 30px #00ffff;
+            margin-bottom: 40px;
+        }
+        .cv-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 20px #8a2be2;
+        }
+        .cv-section h3 {
+            color: #ff00ff;
+            text-shadow: 0 0 15px #ff00ff;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #ff00ff;
+            box-shadow: 0 0 30px #ff00ff;
+            flex-shrink: 0;
+        }
+        .profile-text {
+            flex: 1;
+            text-shadow: 0 0 10px #8a2be2;
+            line-height: 1.6;
+        }
+        .list-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .list-section li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+            text-shadow: 0 0 10px #8a2be2;
+        }
+        .list-section li::before {
+            content: "•";
+            color: #00ffff;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            text-shadow: 0 0 10px #00ffff;
+        }
+        .skills-link {
+            color: #ff00ff;
+            text-decoration: none;
+            text-shadow: 0 0 10px #ff00ff;
+        }
+        .skills-link:hover {
+            text-shadow: 0 0 20px #ff00ff;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+		<a href="portofolio.html">Portofolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <section class="content">
+        <h2>About Me</h2>
+        
+        <div class="cv-section profile-section">
+            <img src="PP.jpg"class="profile-img">
+            <div class="profile-text">
+                <h3>Penjelasan Diri</h3>
+                <p>Halo, saya Albert Jonea Setiawan, seorang mahasiswa jurusan IT di STMIK LIKMI yang tinggal di Kota Bandung. Saya memiliki ketertarikan di dalam dunia digital khususnya di dunia gaming, karena saya sangat amat gemar bermain game jadi saya memiliki cita-cita dan tujuan untuk membuat game saya sendiri. Saat ini saya sedang membangun fondasi di bidang ini melalui pembelajaran aktif.</p>
+            </div>
+        </div>
+        
+        <div class="cv-section list-section">
+            <h3>Riwayat Pendidikan</h3>
+            <ul>
+                <li>[2013-2018] - SDK GAMALIAEL BANDUNG - [LULUS]</li>
+                <li>[2019-2021] - SMPK GAMALIEL BANDUNG - [LULUS]</li>
+                <li>[2022-2025] - SMAK 1 BINABAKTI BANDUNG - [LULUS]</li>
+				<li>[2025-Sekarang] - STMIK LIKMI BANDUNG - [BELUM LULUS]</li>
+            </ul>
+        </div>
+        
+        <div class="cv-section list-section">
+            <h3>Skill</h3>
+            <ul>
+                <li>Ms Office - Tingkat Menengah</li>
+                <li>After Effect - Tingkat Pemula</li>
+                <li> Capcut - Tingkat Menengah</li>
+            </ul>
+            <p>Untuk detail lebih lanjut, lihat halaman <a href="skills.html" class="skills-link">Skills</a>.</p>
+        </div>
+        
+        <div class="cv-section list-section">
+            <h3>Hobi</h3>
+            <ul>
+                <li>Hobi 1, Bermain Game</li>
+                <li>Hobi 2, Mendengarkan Musik</li>
+                <li>Hobi 3, Membaca sebuah novel/komik</li>
+            </ul>
+        </div>
+		<div class="cv-section list-section">
+          <h3>Gambar Hobi</h3>
+          <table width="1200">
+            <tbody>
+              <tr>              </tr>
+            </tbody>
+          </table>
+          <table width="1200">
+            <tbody>
+              <tr>
+                <td width="29">&nbsp;</td>
+                <td width="226"><img src="6db14180e2f6f2849c75116eb2b6f2ae.jpg" width="220" height="175" alt=""/></td>
+                <td width="390"><img src="Screenshot 2025-11-26 084930.png" width="384" height="175" alt=""/></td>
+                <td width="158"><img src="novel.jpg" width="274" height="163" alt=""/></td>
+                <td width="119">&nbsp;</td>
+                <td width="119">&nbsp;</td>
+                <td width="127">&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul>
+            &nbsp;
+          </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Albert Jonea Setiawan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

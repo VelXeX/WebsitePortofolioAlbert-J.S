@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Skills</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #000000, #1a0033);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px #8a2be2;
+        }
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            text-shadow: 0 0 10px #8a2be2;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #ff00ff;
+            text-shadow: 0 0 20px #ff00ff;
+        }
+        .content {
+            padding: 50px 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .content h2 {
+            font-size: 3em;
+            text-shadow: 0 0 30px #00ffff;
+        }
+        .skills-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .skill-item {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #8a2be2;
+            text-align: left;
+        }
+        .skill-item h3 {
+            color: #ff00ff;
+            text-shadow: 0 0 15px #ff00ff;
+        }
+        .progress-bar {
+            background: #333;
+            border-radius: 5px;
+            height: 20px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #8a2be2, #ff00ff);
+            box-shadow: 0 0 10px #ff00ff;
+            transition: width 0.5s;
+        }
+        .certificates {
+            margin-top: 40px;
+        }
+        .certificates h3 {
+            color: #00ffff;
+            text-shadow: 0 0 15px #00ffff;
+        }
+        .certificates ul {
+            list-style: none;
+            padding: 0;
+        }
+        .certificates li {
+            margin: 10px 0;
+            text-shadow: 0 0 10px #8a2be2;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+		<a href="portofolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <section class="content">
+        <h2>My Skills</h2>
+        <p>Berikut merupakan keahlian yang saya pelajari dan kembangkan.</p>
+        <div class="skills-list">
+            <div class="skill-item">
+                <h3>Ms Office (Word,Excel,PowerPoint, dll)</h3>
+                <p>Tingkat: Menengah - Sedang Mempelajari Aplikasi Office Yang Lainnya.</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>After Effect</h3>
+                <p>Tingkat: Pemula - Sedang Mempelajari Dasar Animasi.</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 35%;"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <h3>Capcut</h3>
+                <p>Tingkat: Menengah - Bisa edit video dan editing sederhana.</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 60%;"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="certificates">
+            <h3>Sertifikat</h3>
+            <ul>
+                <li> Belum Memiliki Sertifikat Apapun</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Albert Jonea Setiawan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home</title>
+    <style>
+        body {
+	 			margin: 0;
+				padding: 0;
+				font-family: 'Arial', sans-serif;
+				background: linear-gradient(135deg, #000000, #1a0033);
+				color: #ffffff;
+				overflow-x: hidden;
+				min-height: 100vh;
+				align-items: center;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px #8a2be2;
+        }
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            text-shadow: 0 0 10px #8a2be2;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #ff00ff;
+            text-shadow: 0 0 20px #ff00ff;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;        
+			background: url('https://via.placeholder.com/1920x1080/000000/ffffff?text=Neon+City') no-repeat center center/cover;
+            min-height: 100vh;
+        }
+          main {
+    max-width: 900px;
+    width: 100%;
+    padding: 100px 20px 60px 20px;
+    box-sizing: border-box;
+    flex-grow: 1;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 40px;
+    color: #ff33cc;
+    text-shadow:
+      0 0 10px #ff33cc,
+      0 0 20px #ff66cc,
+      0 0 40px #ff99dd;
+  }
+
+  /* Grid gallery untuk portofolio */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+    justify-items: center; /* Pastikan item di tengah */
+  }
+  .gallery-item {
+    background: #1a0033cc;
+    border-radius: 15px;
+    box-shadow: 0 0 30px #8a2be2cc;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    transition: box-shadow 0.3s;
+    text-align: center; /* Teks di tengah */
+  }
+  .gallery-item:hover {
+    box-shadow: 0 0 50px #ff00ffcc;
+  }
+  .gallery-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: block; /* Pastikan gambar di tengah */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .gallery-description {
+    font-size: 1.1em;
+    color: #ea99ffcc;
+    text-shadow: 0 0 12px #b25fff;
+    text-align: center;
+    padding: 0 5px 10px;
+    min-height: 48px;
+  }
+
+  /* Video Section */
+  .video-section {
+    text-align: center;
+    margin-top: 40px;
+  }
+  .video-section h3 {
+    color: #ff66cc;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow:
+      0 0 15px #ff66cc,
+      0 0 40px #ff99dd;
+  }
+  .video-container {
+    max-width: 750px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 70px #ff00ffbb;
+    display: flex;
+    justify-content: center; /* Video di tengah */
+  }
+  .video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+  }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #cccccc;
+        }
+		 @media (max-width: 400px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero img {
+                max-width: 180px;
+            }
+            .action-button {
+                padding: 10px 28px;
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="portofolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+	<center>
+  <main>
+    <h2>Portofolio Saya</h2>
+    <section class="gallery">
+      <div class="gallery-item">
+        <img src="Screenshot 2025-11-28 222229.png" alt="Project 1" />
+        <div class="gallery-description">Project 1 - Ragging Animation Shape</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Screenshot 2025-11-28 222307.png" alt="Project 2" />
+        <div class="gallery-description">Project 2 - Ragging Character Asse&nbsp;</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Screenshot 2025-11-28 222337.png" alt="Project 3" />
+        <div class="gallery-description">Project 3 - Kynetic Typografi</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Screenshot 2025-11-28 222708.png" alt="Project 3" />
+        <div class="gallery-description">Project 4 - Shape Animation</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Screenshot 2025-11-28 222549.png" alt="Project 3" />
+        <div class="gallery-description">Project 5 - Looping Shape&nbsp;</div>
+      </div>
+      <div class="gallery-item">
+        <img src="Screenshot 2025-11-28 222751.png" alt="Project 3" />
+        <div class="gallery-description">Project 6 - Circle Animation</div>
+      </div>
+    </section>
+
+    <section class="video-section">
+      <h3>Video Karya Saya</h3>
+      <div class="video-container">
+        <video controls>
+          <source src="Comp 1_1.mp4" type="video/mp4" />
+          Browser kamu tidak mendukung video.
+        </video>
+      </div>
+    </section>
+	</main>
+	</center>
+<footer>    
+		<p>&copy; 2025 Albert Jonea Setiawan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
